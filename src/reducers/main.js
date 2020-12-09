@@ -4,7 +4,7 @@ import videoList from './videoList.js';
 
 var rootReducer = combineReducers( {currentVideo: currentVideo, videoList: videoList});
 
-
+//
 /* state ->
   currentVideo: {script: "This is my only line."}
   videoList: (3) [1, 2, 3]
