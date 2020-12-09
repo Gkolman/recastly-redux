@@ -7,7 +7,7 @@ import YOUTUBE_API_KEY from '../config/youtube.js';
 var handleVideoSearch = (q) => {
 
   return function(dispatch) {
-    console.log('dispatch - > ', dispatch);
+    //console.log('dispatch - > ', dispatch);
     searchYouTube({
       'key': YOUTUBE_API_KEY,
       'q': q,

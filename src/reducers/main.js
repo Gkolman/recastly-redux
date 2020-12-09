@@ -2,7 +2,22 @@ import { combineReducers } from 'redux';
 import currentVideo from './currentVideo.js';
 import videoList from './videoList.js';
 
-var rootReducer = () => {};
+var rootReducer = combineReducers( {currentVideo: currentVideo, videoList: videoList});
+
+
+/* state ->
+  currentVideo: {script: "This is my only line."}
+  videoList: (3) [1, 2, 3]
+*/
+/* action  ->
+    type: "CHANGE_VIDEO"
+    video: {script: "this is my only line."}
+*/
+
+// var rReducer = combineReducers( {'currentvideo': currentVideo, 'videolist': videoList} );
+
+// return rReducer;
+
 
 //TODO: define the root reducer for this app
 
