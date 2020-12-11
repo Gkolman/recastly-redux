@@ -12,8 +12,13 @@ var handleVideoSearch = (q) => {
       'key': YOUTUBE_API_KEY,
       'q': q,
       'max': 5
-    }, (data) => console.log('data -> ', data));
-    // TODO:  Write an asynchronous action to handle a video search!
+    }, (data) => {
+      console.log('data -> ', data);
+      dispatch({
+        type: 'CHANGE_VIDEO_LIST',
+        videos: data,
+      });
+    });
   };
 };
 export default handleVideoSearch;
